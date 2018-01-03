@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.martin.alllibrary">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".activity.SelectAreaActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.ShowImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".util.mediaUtil.videoUtil.VideoListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PhotoSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
